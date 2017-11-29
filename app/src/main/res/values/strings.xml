@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Trabalho02-2017-2</string>
+    <string-array name="equipes">
+        <item>Ferrari</item>
+        <item>Mercedes</item>
+        <item>RBR</item>
+        <item>Ferrari2</item>
+        <item>Mercedes2</item>
+        <item>RBR2</item>
+        <item>Ferrari3</item>
+        <item>Mercedes3</item>
+        <item>RBR3</item>
+        <item>Ferrari4</item>
+        <item>Mercedes4</item>
+        <item>RBR4</item>
+        <item>Ferrari5</item>
+        <item>Mercedes5</item>
+        <item>RBR5</item>
+        <item>Ferrari6</item>
+        <item>Mercedes6</item>
+        <item>RBR6</item>
+    </string-array>
 </resources>
