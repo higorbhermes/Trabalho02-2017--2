@@ -20,5 +20,17 @@
             android:text="Nome do Evento"
             android:id="@+id/nome"
             android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data do Evento"
+            android:id="@+id/data"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local do Evento"
+            android:id="@+id/local"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 </LinearLayout>

@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            Toast.makeText(getBaseContext(), "Evento: "+evento.get(i).getNome(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, Main2Activity.class);
             intent.putExtra("nome", evento.get(i).getNome());
             startActivity(intent);
@@ -39,12 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Evento> adicionarEvento() {
         ArrayList<Evento> evento = new ArrayList<Evento>();
-        Evento e = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(e);
-        Evento f = new Evento("Data do Evento", R.drawable.data);
-        evento.add(f);
-        Evento g = new Evento("Local do Evento", R.drawable.local);
-        evento.add(g);
+        Evento ev1 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev1);
+        Evento ev2 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev2);
+        Evento ev3 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev3);
+        Evento ev4 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev4);
+        Evento ev5 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev5);
+        Evento ev6 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev6);
+        Evento ev7 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(ev7);
+        Evento e8 = new Evento("Nome do Evento", R.drawable.nome);
+        evento.add(e8);
         return evento;
     }
 }
