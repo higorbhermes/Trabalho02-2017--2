@@ -38,12 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Evento> adicionarEvento() {
         ArrayList<Evento> evento = new ArrayList<Evento>();
-        Evento ev1 = new Evento("Nome do Evento", R.drawable.nome);
+        Evento ev1 = new Evento("Show Ed Sheeran", "26/04/17", "Alianz Arena", 45000, "", "", 345.00, R.drawable.nome);
         evento.add(ev1);
-        Evento ev2 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev2);
-        Evento ev3 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev3);
+
 
         return evento;
     }

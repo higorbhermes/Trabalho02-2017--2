@@ -32,9 +32,13 @@ public class EventoAdapter extends ArrayAdapter<Evento>{
         View rowView = inflater.inflate(R.layout.item_evento, parent, false);
 
         TextView nome = (TextView) rowView.findViewById(R.id.nome);
+        TextView data = (TextView) rowView.findViewById(R.id.data);
+        TextView local = (TextView) rowView.findViewById(R.id.local);
         ImageView imagem = (ImageView) rowView.findViewById(R.id.imagem);
 
         nome.setText(elementos.get(position).getNome());
+        data.setText(elementos.get(position).getData());
+        local.setText(elementos.get(position).getLocal());
         imagem.setImageResource(elementos.get(position).getImagem());
         return rowView;
     }
