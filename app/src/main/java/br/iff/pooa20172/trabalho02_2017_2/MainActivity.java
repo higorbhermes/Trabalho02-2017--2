@@ -44,16 +44,7 @@ public class MainActivity extends AppCompatActivity {
         evento.add(ev2);
         Evento ev3 = new Evento("Nome do Evento", R.drawable.nome);
         evento.add(ev3);
-        Evento ev4 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev4);
-        Evento ev5 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev5);
-        Evento ev6 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev6);
-        Evento ev7 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(ev7);
-        Evento e8 = new Evento("Nome do Evento", R.drawable.nome);
-        evento.add(e8);
+
         return evento;
     }
 }
