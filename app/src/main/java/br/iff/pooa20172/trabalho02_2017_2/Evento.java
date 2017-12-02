@@ -1,5 +1,7 @@
 package br.iff.pooa20172.trabalho02_2017_2;
 
+import android.os.Bundle;
+
 /**
  * Created by Higor on 29/11/2017.
  */
@@ -20,6 +22,18 @@ public class Evento {
         this.patrocinio = patrocinio;
         this.valor = valor;
         this.imagem = imagem;
+    }
+
+    public Bundle toBundle(){
+        Bundle bundle = new Bundle();
+        bundle.putString("nome", nome);
+        bundle.putString("data", data);
+        bundle.putString("local", local);
+        bundle.putString("promotor", promotor);
+        bundle.putString("patrocinio", patrocinio);
+        bundle.putInt("capacidade", capacidade);
+        bundle.putDouble("valor", valor);
+        return bundle;
     }
 
     public String getNome() {

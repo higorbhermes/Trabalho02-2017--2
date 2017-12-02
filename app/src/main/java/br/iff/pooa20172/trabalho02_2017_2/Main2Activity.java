@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -40,26 +41,35 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void finish() {
-        EditText et_Nome = (EditText) findViewById(R.id.et_Nome);
+        /*EditText et_Nome = (EditText) findViewById(R.id.et_Nome);
         EditText et_Data = (EditText) findViewById(R.id.et_Data);
         EditText et_Local = (EditText) findViewById(R.id.et_Local);
         EditText et_Capacidade = (EditText) findViewById(R.id.et_Capacidade);
         EditText et_Promotor = (EditText) findViewById(R.id.et_Promotor);
         EditText et_Patrocinio = (EditText) findViewById(R.id.et_Patrocinio);
-        EditText et_Valor = (EditText) findViewById(R.id.et_Valor);
+        EditText et_Valor = (EditText) findViewById(R.id.et_Valor);*/
 
         Intent intent = new Intent();
+        Bundle bundle = new Bundle();
+        bundle.putString("nome", ((EditText) findViewById(R.id.et_Nome)).getText().toString());
+        bundle.putString("local", ((EditText) findViewById(R.id.et_Local)).getText().toString());
+        bundle.putString("data", ((EditText) findViewById(R.id.et_Data)).getText().toString());
+        bundle.putString("promotor", ((EditText) findViewById(R.id.et_Promotor)).getText().toString());
+        bundle.putString("patrocinio", ((EditText) findViewById(R.id.et_Patrocinio)).getText().toString());
+        bundle.putInt("capacidade", Integer.parseInt(((EditText) findViewById(R.id.et_Capacidade)).getText().toString()));
+        bundle.putDouble("valor", Double.parseDouble(((EditText) findViewById(R.id.et_Valor)).getText().toString()));
+        intent.putExtras(bundle);
 
-        intent.putExtra("nome", et_Nome.getText());
-        intent.putExtra("data", et_Data.getText());
-        intent.putExtra("local", et_Local.getText());
-        intent.putExtra("capacidade", et_Capacidade.getText());
-        intent.putExtra("promotor", et_Promotor.getText());
-        intent.putExtra("patrocinio", et_Patrocinio.getText());
-        intent.putExtra("valor", et_Valor.getText());
-        intent.putExtra("retorno", "Retornou");
+        /*Intent intent2 = new Intent();
+        intent2.putExtra("nome", et_Nome.getText());
+        intent2.putExtra("data", et_Data.getText());
+        intent2.putExtra("local", et_Local.getText());
+        intent2.putExtra("capacidade", et_Capacidade.getText());
+        intent2.putExtra("promotor", et_Promotor.getText());
+        intent2.putExtra("patrocinio", et_Patrocinio.getText());
+        intent2.putExtra("valor", et_Valor.getText());
+        intent2.putExtra("retorno", "Retornou");*/
         setResult(RESULT_OK, intent);
         super.finish();
     }
-
 }

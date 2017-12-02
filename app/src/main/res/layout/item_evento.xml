@@ -7,8 +7,8 @@
         android:layout_height="80dp"
         android:id="@+id/imagem"
         android:scaleType="fitXY"
-        android:src="@drawable/nome"
         android:layout_margin="5dp" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
